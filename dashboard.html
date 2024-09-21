@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en" ; data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payoo Mobile Bank</title>
+    <link rel="icon" href="Images/icon.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <main class="flex justify-center pt-10">
+      <div class="mockup-phone">
+        <div class="camera"></div>
+        <div class="display">
+          <div class="artboard artboard-demo phone-3">
+            <div class="flex justify-between gap-60">
+              <h2>9:41</h2>
+                <div>
+                  <img src="Images/mobile-indicator.png" alt="">
+                </div>
+            </div>
+            <div class="flex justify-between items-center gap-14">
+              <div  class="flex items-center">
+                <div>
+                  <img src="Images/icon.png" alt="">
+                </div>
+              <div>
+                <h2>$ <span  id="current-balance">0</span></h2>
+                <h4>Available Balance</h4>
+              </div>
+              </div>
+              <button id="log-out" class="p-2 border-2 rounded-lg border-gray-400 flex items-center">
+                <div >
+                  <img src="Images/logout.png" alt="">
+                </div>
+                <h2>Log Out</h2>
+              </button>
+            </div>
+            <div class="px-10">
+              <h1 class="font-bold text-2xl">Welcome to Payooo!</h1>
+              <p class="text-[#2e2e2e] opacity-[50px]">Enjoy easy and convenient financial services with us. Cashout charge is low and </p>
+            </div>
+            
+            <section class="flex py-1 gap-5">
+              <div class="flex flex-col gap-5">
+                <div class=" shadow">
+                  <div class="stat flex items-center ">
+                    <img src="Images/add-money.png" alt="">
+                    <button id="add-money" class="stat-title font-bold">Add Money</button>
+                  </div>
+                </div>
+                <div class=" shadow">
+                  <div class="stat flex items-center">
+                    <img src="Images/cashout.png" alt="">
+                    <button id="cashout-money" class="stat-title font-bold">Cash out</button>
+                  </div>
+                </div>
+              </div>
+              <!-- bottom -->
+              <div class="flex flex-col gap-5">
+                <div class=" shadow">
+                  <div class="stat flex">
+                    <img src="Images/get-bonus.png" alt="">
+                    <button class="stat-title font-bold">Get Bonus</button>
+  
+                  </div>
+                </div>
+                <div class=" shadow">
+                  <div class="stat flex">
+                    <img src="Images/transaction.png" alt="">
+                    <button class="stat-title font-bold">Transactions</button>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <!-- form -->
+            <section id="add-money-form" class="hidden">
+              <h2 class="font-bold py-2">Add Money</h2>
+              <div class="card bg-base-100 w-full max-w-lg shrink-0 shadow-2xl">
+                <form class="card-body">
+                  <div class="form-control">
+                    
+                    <label class="label">
+                      <span class="label-text font-bold">Amount to Add</span>
+                    </label>
+                    <input id="input-money" type="number" placeholder="Enter amount" class="input  rounded-3xl bg-[#F4F5F7]" required />
+                  </div>
+                  <div class="form-control">
+                    <label class="label">
+                      <span class="label-text font-bold">Pin Number</span>
+                    </label>
+                    <input id="add-money-pin" type="password" placeholder="Enter pin number" class="input  rounded-3xl bg-[#F4F5F7]" required />
+                    
+                  </div>
+                  <div class="form-control mt-6">
+                    <button id="add-money-button" class="btn bg-[#0874F2] text-white rounded-3xl 
+                    hover:bg-[#010c18]">Add Money</button>
+                  </div>
+                </form>
+                </div>
+            </section>
+            <!-- CashOut Section -->
+            <section id="cashout-form" class="hidden">
+              <h2 class="font-bold py-2">Cash Out</h2>
+              <div class="card bg-base-100 w-full max-w-lg shrink-0 shadow-2xl">
+                <form class="card-body">
+                  <div class="form-control">
+                    
+                    <label class="label">
+                      <span class="label-text font-bold">Amount to Cash Out</span>
+                    </label>
+                    <input id="input-number" type="email" placeholder="Enter amount" class="input  rounded-3xl bg-[#F4F5F7]" required />
+                  </div>
+                  <div class="form-control">
+                    <label class="label">
+                      <span class="label-text font-bold">Pin Number</span>
+                    </label>
+                    <input id="input-pin" type="password" placeholder="Enter pin number" class="input  rounded-3xl bg-[#F4F5F7]" required />
+                    
+                  </div>
+                  <div class="form-control mt-6">
+                    <button id="cashout-money-button" class="btn bg-[#0874F2] text-white rounded-3xl 
+                    hover:bg-[#010c18]">Cash Out</button>
+                  </div>
+                </form>
+                </div>
+
+            </section>
+          </div>
+        </div>
+      </div>
+        
+    </main>
+    <script src="dashboard.js"></script>
+</body>
+</html>
